@@ -22,10 +22,10 @@ def cotton_saree():
     logger.info("Entering cotton_saree route")
     return render_template('cotton_saree.html')
 
-@app.route('/category/silk_saree')
-def silk_saree():
-    logger.info("Entering silk_saree route")
-    return render_template('silk_saree.html')
+@app.route('/category/fancy_saree')
+def fancy_saree():
+    logger.info("Entering fancy_saree route")
+    return render_template('fancy_saree.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
