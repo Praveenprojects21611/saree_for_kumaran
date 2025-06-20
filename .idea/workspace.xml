@@ -5,43 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kumaran_html_only.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/blue_cotton_saree_with_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/blue_cotton_saree_with_blouse1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/blue_cotton_saree_without_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/blue_cotton_saree_without_blouse1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/green_cotton_saree_without_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/green_cotton_saree_without_blouse1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/green_cotton_saree_without_blouse2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/green_cotton_saree_without_blouse3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/green_plain_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/grey_cotton_saree_without_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/meroon_cotton_saree_without_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/pink_cotton_saree_without_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/pink_plain_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/rose_cotton_saree_without_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/rose_plain_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/sky_blue_cotton_saree_with_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/sky_blue_cotton_saree_with_blouse2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/sky_blue_cotton_saree_with_blouse3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/yellow_cotton_saree_with_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/yellow_cotton_saree_without_blouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/yellow_cotton_saree_without_blouse1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/yellow_plain_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/whatsapp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cotton_saree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/plain_saree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/silk_saree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
