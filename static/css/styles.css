@@ -1,0 +1,242 @@
+/* Import futuristic fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/* Root variables for theming */
+:root {
+  --neon-pink: #ff0077;
+  --neon-cyan: #00ffff;
+  --neon-green: #00ff88;
+  --bg-dark: #0d0d1f;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glow-shadow: 0 0 15px var(--neon-pink), 0 0 30px var(--neon-cyan);
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-dark);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  padding: 40px;
+}
+
+/* Parallax background with subtle gradient */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, var(--neon-pink) 0%, transparent 70%),
+              radial-gradient(circle at 20% 80%, var(--neon-cyan) 0%, transparent 50%);
+  z-index: -2;
+  animation: pulseGlow 10s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+
+/* Particle layer (CSS-only particles) */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="white"/></svg>') repeat;
+  opacity: 0.1;
+  animation: floatParticles 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes floatParticles {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100vh); }
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: var(--glow-shadow);
+  transform: perspective(1000px) translateZ(0);
+  transition: transform 0.5s ease;
+}
+
+header:hover {
+  transform: perspective(1000px) translateZ(20px);
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: var(--neon-cyan);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  text-shadow: 0 0 5px var(--neon-cyan);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 15px var(--neon-green);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: var(--neon-green);
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 20px;
+  perspective: 1000px;
+}
+
+.product {
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: var(--glow-shadow);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: rotateY(0);
+}
+
+.product:hover {
+  transform: rotateY(10deg) translateZ(50px);
+  box-shadow: 0 0 25px var(--neon-pink), 0 0 50px var(--neon-cyan);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+  transition: transform 0.4s ease;
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 40px auto;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, var(--neon-green), var(--neon-cyan));
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: var(--glow-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+.whatsapp-button::before {
+  content: '📱';
+  font-size: 1.5rem;
+}
+
+.whatsapp-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.whatsapp-button:hover::after {
+  left: 100%;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px var(--neon-green);
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: var(--glow-shadow);
+  font-family: 'Orbitron', sans-serif;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 5px var(--neon-cyan);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .products {
+    grid-template-columns: 1fr;
+  }
+  .product {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Animation for page load */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.products, .whatsapp-button, footer {
+  animation: slideIn 1s ease-out forwards;
+}
