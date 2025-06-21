@@ -1,20 +1,20 @@
 /* Import futuristic fonts */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600;800&family=Inter:wght@300;400;700&display=swap');
 
-/* Dynamic theme variables with vibrant cyberpunk palette */
+/* Dynamic theme variables with ultra-vibrant cyberpunk palette */
 :root {
-  --primary-neon: #00e6ff; /* Neon blue */
-  --secondary-neon: #ff0088; /* Hot pink */
-  --accent-neon: #00ffcc; /* Electric teal */
-  --dark-bg: #0a0015; /* Deep cosmic purple */
-  --glass-bg: rgba(255, 255, 255, 0.08); /* Subtle glass effect */
-  --glass-border: rgba(255, 255, 255, 0.12); /* Soft border */
-  --glow-shadow: 0 0 10px var(--primary-neon), 0 0 20px var(--secondary-neon);
+  --primary-neon: #ffea00; /* Neon yellow */
+  --secondary-neon: #d400ff; /* Electric purple */
+  --accent-neon: #ff2e8b; /* Vivid magenta */
+  --dark-bg: #0a000f; /* Deep void black */
+  --glass-bg: rgba(255, 255, 255, 0.1); /* Bolder glass effect */
+  --glass-border: rgba(255, 255, 255, 0.15); /* Brighter border */
+  --glow-shadow: 0 0 12px var(--primary-neon), 0 0 25px var(--secondary-neon);
   --transition-speed: 0.3s; /* Smooth transitions */
-  --image-size: 300px; /* Default image size */
-  --image-size-tablet: 260px; /* Tablet image size */
-  --image-size-mobile: 240px; /* Increased mobile image size */
-  --container-padding: clamp(1rem, 5vw, 2.5rem); /* Responsive padding */
+  --image-size: 320px; /* Larger default image size */
+  --image-size-tablet: 280px; /* Tablet image size */
+  --image-size-mobile: 260px; /* Larger mobile image size */
+  --container-padding: clamp(1.2rem, 5vw, 2.8rem); /* Slightly larger padding */
 }
 
 /* Reset and base styles */
@@ -36,34 +36,34 @@ body {
   -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
 }
 
-/* Dynamic background with vibrant gradient animation */
+/* Vibrant background with dynamic gradient animation */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at 50% 50%, var(--primary-neon) 0%, transparent 60%),
-              radial-gradient(circle at 30% 75%, var(--secondary-neon) 0%, transparent 45%);
+  background: radial-gradient(circle at 50% 50%, var(--primary-neon) 0%, transparent 55%),
+              radial-gradient(circle at 25% 70%, var(--secondary-neon) 0%, transparent 50%);
   z-index: -2;
-  opacity: 0.35;
+  opacity: 0.4;
   will-change: opacity;
-  animation: bgPulse 10s ease-in-out infinite;
+  animation: bgPulse 8s ease-in-out infinite;
 }
 
 @keyframes bgPulse {
-  0%, 100% { opacity: 0.35; }
-  50% { opacity: 0.55; }
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.65; }
 }
 
-/* Optimized particle effect */
+/* Enhanced particle effect with vibrant glow */
 body::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><circle cx="2" cy="2" r="1" fill="white"/></svg>') repeat;
-  opacity: 0.07;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><circle cx="2.5" cy="2.5" r="1.5" fill="white"/></svg>') repeat;
+  opacity: 0.08;
   z-index: -1;
   will-change: transform;
-  animation: driftParticles 25s linear infinite;
+  animation: driftParticles 20s linear infinite;
 }
 
 @keyframes driftParticles {
@@ -71,54 +71,54 @@ body::after {
   100% { transform: translateY(-100vh); }
 }
 
-/* Header with glassmorphism */
+/* Header with enhanced glassmorphism */
 header {
   text-align: center;
   margin-bottom: calc(var(--container-padding) * 2);
   padding: var(--container-padding);
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   border: 1px solid var(--glass-border);
-  border-radius: 15px;
+  border-radius: 18px;
   box-shadow: var(--glow-shadow);
   transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
-header:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px var(--primary-neon);
+header:active, header:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px var(--primary-neon);
 }
 
-/* Navigation with touch-friendly feedback */
+/* Navigation with vibrant touch feedback */
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: clamp(0.5rem, 2vw, 1rem);
+  gap: clamp(0.6rem, 2.5vw, 1.2rem);
 }
 
 nav a {
   text-decoration: none;
   color: var(--secondary-neon);
   font-family: 'Exo 2', sans-serif;
-  font-weight: 600;
-  font-size: clamp(0.9rem, 3vw, 1rem);
+  font-weight: 700;
+  font-size: clamp(1rem, 3.5vw, 1.1rem);
   position: relative;
-  padding: 0.5rem;
-  text-shadow: 0 0 3px var(--secondary-neon);
+  padding: 0.6rem;
+  text-shadow: 0 0 4px var(--secondary-neon);
   transition: color var(--transition-speed) ease, text-shadow var(--transition-speed) ease;
 }
 
 nav a:active, nav a:focus {
   color: var(--accent-neon);
-  text-shadow: 0 0 10px var(--accent-neon);
+  text-shadow: 0 0 12px var(--accent-neon);
 }
 
 nav a::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 3px;
   background: var(--accent-neon);
   bottom: 0;
   left: 50%;
@@ -127,53 +127,53 @@ nav a::after {
 }
 
 nav a:active::after, nav a:focus::after {
-  width: 80%;
+  width: 90%;
 }
 
 /* Product grid with dynamic sizing */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
-  gap: clamp(1rem, 4vw, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+  gap: clamp(1.2rem, 4.5vw, 2.5rem);
   padding: var(--container-padding);
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 .product {
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   border: 1px solid var(--glass-border);
   padding: var(--container-padding);
   text-align: center;
-  border-radius: 15px;
+  border-radius: 18px;
   box-shadow: var(--glow-shadow);
   transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
 .product:active, .product:focus-within {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px var(--primary-neon), 0 0 40px var(--secondary-neon);
+  transform: translateY(-12px);
+  box-shadow: 0 0 25px var(--primary-neon), 0 0 50px var(--secondary-neon);
 }
 
-/* Standardized image sizing with touch feedback */
+/* Standardized image sizing with vibrant touch feedback */
 .product img {
   width: var(--image-size);
   max-height: var(--image-size);
   object-fit: contain; /* Ensures full image is visible */
-  border-radius: 10px;
-  filter: drop-shadow(0 0 8px rgba(0, 230, 255, 0.5));
+  border-radius: 12px;
+  filter: drop-shadow(0 0 10px rgba(255, 234, 0, 0.6));
   transition: transform var(--transition-speed) ease, filter var(--transition-speed) ease;
   cursor: pointer;
-  touch-action: manipulation; /* Optimize touch responsiveness */
+  touch-action: manipulation;
 }
 
 .product img:active, .product img:focus {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 12px var(--secondary-neon));
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 15px var(--secondary-neon));
 }
 
-/* Full-screen image modal */
+/* Full-screen image modal with elastic zoom */
 .modal {
   display: none;
   position: fixed;
@@ -197,19 +197,19 @@ nav a:active::after, nav a:focus::after {
   width: auto;
   height: auto;
   object-fit: contain; /* Ensures full image is shown */
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: var(--glow-shadow);
-  animation: zoomIn 0.4s ease-out;
+  animation: elasticZoom 0.6s ease-out forwards;
 }
 
 .modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 2.2rem;
   color: var(--secondary-neon);
   cursor: pointer;
-  text-shadow: 0 0 5px var(--secondary-neon);
+  text-shadow: 0 0 6px var(--secondary-neon);
   transition: color var(--transition-speed) ease;
 }
 
@@ -217,25 +217,26 @@ nav a:active::after, nav a:focus::after {
   color: var(--accent-neon);
 }
 
-@keyframes zoomIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+@keyframes elasticZoom {
+  0% { transform: scale(0.7); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
-/* WhatsApp button with dynamic shine */
+/* WhatsApp button with vibrant shine */
 .whatsapp-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   margin: calc(var(--container-padding) * 2) auto;
-  padding: clamp(0.8rem, 3vw, 1rem) clamp(1.5rem, 5vw, 2rem);
+  padding: clamp(0.9rem, 3.5vw, 1.2rem) clamp(1.8rem, 5.5vw, 2.2rem);
   background: linear-gradient(45deg, var(--accent-neon), var(--secondary-neon));
   color: #fff;
   font-family: 'Exo 2', sans-serif;
   font-weight: 800;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 60px;
   box-shadow: var(--glow-shadow);
   position: relative;
   overflow: hidden;
@@ -244,7 +245,7 @@ nav a:active::after, nav a:focus::after {
 
 .whatsapp-button::before {
   content: '📱';
-  font-size: clamp(1rem, 4vw, 1.2rem);
+  font-size: clamp(1.1rem, 4.5vw, 1.3rem);
 }
 
 .whatsapp-button::after {
@@ -254,7 +255,7 @@ nav a:active::after, nav a:focus::after {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
   transition: left 0.4s ease;
 }
 
@@ -263,24 +264,24 @@ nav a:active::after, nav a:focus::after {
 }
 
 .whatsapp-button:active, .whatsapp-button:focus {
-  transform: translateY(-3px);
-  box-shadow: 0 0 28px var(--accent-neon);
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px var(--accent-neon);
 }
 
-/* Footer with glassmorphism */
+/* Footer with vibrant glassmorphism */
 footer {
   margin-top: calc(var(--container-padding) * 2);
   text-align: center;
   padding: var(--container-padding);
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   border: 1px solid var(--glass-border);
-  border-radius: 15px;
+  border-radius: 18px;
   box-shadow: var(--glow-shadow);
   font-family: 'Exo 2', sans-serif;
   color: var(--secondary-neon);
-  text-shadow: 0 0 3px var(--secondary-neon);
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  text-shadow: 0 0 4px var(--secondary-neon);
+  font-size: clamp(0.9rem, 2.8vw, 1rem);
 }
 
 /* Responsive design */
@@ -293,7 +294,7 @@ footer {
   }
   nav {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.6rem;
   }
 }
 
@@ -310,20 +311,21 @@ footer {
   }
 }
 
-/* Load animation */
-@keyframes fadeSlideIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Dynamic load animation */
+@keyframes bounceIn {
+  0% { transform: scale(0.8) translateY(40px); opacity: 0; }
+  60% { transform: scale(1.05) translateY(-10px); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
 }
 
 header, .products, .whatsapp-button, footer {
-  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation: bounceIn 0.7s ease-out forwards;
 }
 
 /* High-resolution optimization */
 @media (min-resolution: 2dppx) {
   body::after {
-    background-size: 2px 2px;
+    background-size: 2.5px 2.5px;
   }
 }
 
