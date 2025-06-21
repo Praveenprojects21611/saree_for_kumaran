@@ -329,16 +329,3 @@ header, .products, .whatsapp-button, footer {
   }
 }
 
-/* Disable hover effects on touch devices */
-@media (hover: none) {
-  header:hover, .product:hover, nav a:hover, nav a:hover::after,
-  .whatsapp-button:hover, .whatsapp-button:hover::after, .modal-close:hover,
-  .product img:hover {
-    transform: none;
-    box-shadow: none;
-    color: inherit;
-    text-shadow: inherit;
-    filter: inherit;
-    width: 0;
-  }
-}
