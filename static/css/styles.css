@@ -1,18 +1,20 @@
-/* Import modern, lightweight fonts */
+/* Import futuristic fonts */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600;800&family=Inter:wght@300;400;700&display=swap');
 
-/* Dynamic theme variables with CSS custom properties */
+/* Dynamic theme variables with new cyberpunk palette */
 :root {
-  --primary-neon: #ff1a8c; /* Vibrant neon pink */
-  --secondary-neon: #1affff; /* Bright cyan */
-  --accent-neon: #1aff66; /* Neon green */
-  --dark-bg: #0a0a1a; /* Deep space background */
-  --glass-bg: rgba(255, 255, 255, 0.08); /* Subtle glass effect */
-  --glass-border: rgba(255, 255, 255, 0.12); /* Soft border */
+  --primary-neon: #8b00ff; /* Deep electric violet */
+  --secondary-neon: #ff4d00; /* Neon orange */
+  --accent-neon: #cc00ff; /* Bright purple */
+  --dark-bg: #0c001a; /* Deep twilight indigo */
+  --glass-bg: rgba(255, 255, 255, 0.07); /* Subtle glass effect */
+  --glass-border: rgba(255, 255, 255, 0.1); /* Soft border */
   --glow-shadow: 0 0 10px var(--primary-neon), 0 0 20px var(--secondary-neon);
   --transition-speed: 0.3s; /* Smooth transitions */
-  --image-size: 200px; /* Standardized image size */
-  --container-padding: clamp(1rem, 5vw, 2rem); /* Responsive padding */
+  --image-size: 280px; /* Slightly larger default image size */
+  --image-size-tablet: 220px; /* Tablet image size */
+  --image-size-mobile: 180px; /* Mobile image size */
+  --container-padding: clamp(1rem, 5vw, 2.5rem); /* Responsive padding */
 }
 
 /* Reset and base styles */
@@ -33,34 +35,34 @@ body {
   position: relative;
 }
 
-/* Dynamic background with optimized gradient animation */
+/* Dynamic background with moody gradient animation */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background: radial-gradient(circle at 50% 50%, var(--primary-neon) 0%, transparent 60%),
-              radial-gradient(circle at 30% 70%, var(--secondary-neon) 0%, transparent 40%);
+              radial-gradient(circle at 35% 80%, var(--secondary-neon) 0%, transparent 40%);
   z-index: -2;
-  opacity: 0.4;
+  opacity: 0.35;
   will-change: opacity;
   animation: bgPulse 12s ease-in-out infinite;
 }
 
 @keyframes bgPulse {
-  0%, 100% { opacity: 0.4; }
+  0%, 100% { opacity: 0.35; }
   50% { opacity: 0.6; }
 }
 
-/* Optimized particle effect using CSS transform */
+/* Optimized particle effect */
 body::after {
   content: '';
   position: absolute;
   inset: 0;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><circle cx="2" cy="2" r="1" fill="white"/></svg>') repeat;
-  opacity: 0.08;
+  opacity: 0.06;
   z-index: -1;
   will-change: transform;
-  animation: driftParticles 25s linear infinite;
+  animation: driftParticles 28s linear infinite;
 }
 
 @keyframes driftParticles {
@@ -68,13 +70,13 @@ body::after {
   100% { transform: translateY(-100vh); }
 }
 
-/* Header with glassmorphism and subtle 3D effect */
+/* Header with glassmorphism */
 header {
   text-align: center;
   margin-bottom: calc(var(--container-padding) * 2);
   padding: var(--container-padding);
   background: var(--glass-bg);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   border-radius: 15px;
   box-shadow: var(--glow-shadow);
@@ -83,7 +85,7 @@ header {
 
 header:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px var(--primary-neon);
+  box-shadow: 0 0 22px var(--primary-neon);
 }
 
 /* Navigation with dynamic hover effects */
@@ -130,7 +132,7 @@ nav a:hover::after {
 /* Product grid with dynamic sizing */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: clamp(1rem, 4vw, 2rem);
   padding: var(--container-padding);
   max-width: 1200px;
@@ -139,7 +141,7 @@ nav a:hover::after {
 
 .product {
   background: var(--glass-bg);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   padding: var(--container-padding);
   text-align: center;
@@ -150,24 +152,75 @@ nav a:hover::after {
 
 .product:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 20px var(--primary-neon), 0 0 40px var(--secondary-neon);
+  box-shadow: 0 0 22px var(--primary-neon), 0 0 45px var(--secondary-neon);
 }
 
-/* Standardized image sizing */
+/* Standardized image sizing with interactivity */
 .product img {
   width: var(--image-size);
-  height: var(--image-size);
-  object-fit: cover; /* Ensures images scale uniformly */
+  max-height: var(--image-size);
+  object-fit: contain; /* Ensures full image is visible without cropping */
   border-radius: 10px;
-  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4));
-  transition: transform var(--transition-speed) ease;
+  filter: drop-shadow(0 0 8px rgba(139, 0, 255, 0.5));
+  transition: transform var(--transition-speed) ease, filter var(--transition-speed) ease;
+  cursor: pointer;
 }
 
-.product:hover img {
+.product img:hover {
   transform: scale(1.05);
+  filter: drop-shadow(0 0 12px var(--secondary-neon));
 }
 
-/* WhatsApp button with dynamic shine effect */
+/* Full-screen image modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+.modal img {
+  max-width: 95vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Ensures full image is shown without cropping */
+  border-radius: 10px;
+  box-shadow: var(--glow-shadow);
+  animation: zoomIn 0.4s ease-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: var(--secondary-neon);
+  cursor: pointer;
+  text-shadow: 0 0 5px var(--secondary-neon);
+  transition: color var(--transition-speed) ease;
+}
+
+.modal-close:hover {
+  color: var(--accent-neon);
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* WhatsApp button with dynamic shine */
 .whatsapp-button {
   display: inline-flex;
   align-items: center;
@@ -209,7 +262,7 @@ nav a:hover::after {
 
 .whatsapp-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 25px var(--accent-neon);
+  box-shadow: 0 0 28px var(--accent-neon);
 }
 
 /* Footer with glassmorphism */
@@ -218,7 +271,7 @@ footer {
   text-align: center;
   padding: var(--container-padding);
   background: var(--glass-bg);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   border-radius: 15px;
   box-shadow: var(--glow-shadow);
@@ -228,10 +281,10 @@ footer {
   font-size: clamp(0.8rem, 2.5vw, 0.9rem);
 }
 
-/* Enhanced responsive design */
+/* Responsive design */
 @media (max-width: 768px) {
   :root {
-    --image-size: 150px; /* Smaller images on tablets */
+    --image-size: var(--image-size-tablet);
   }
   .products {
     grid-template-columns: 1fr;
@@ -244,7 +297,7 @@ footer {
 
 @media (max-width: 480px) {
   :root {
-    --image-size: 120px; /* Even smaller images on mobile */
+    --image-size: var(--image-size-mobile);
   }
   .product {
     max-width: 100%;
@@ -255,7 +308,7 @@ footer {
   }
 }
 
-/* Load animation for smooth entry */
+/* Load animation */
 @keyframes fadeSlideIn {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -265,9 +318,9 @@ header, .products, .whatsapp-button, footer {
   animation: fadeSlideIn 0.8s ease-out forwards;
 }
 
-/* High-resolution display optimization */
+/* High-resolution optimization */
 @media (min-resolution: 2dppx) {
   body::after {
-    background-size: 2px 2px; /* Sharper particles on retina */
+    background-size: 2px 2px;
   }
 }
