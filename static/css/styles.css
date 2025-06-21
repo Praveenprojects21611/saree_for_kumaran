@@ -167,7 +167,7 @@ nav a:hover::after {
 }
 
 .product img:hover {
-  transform: scale(1.05);
+  transform: scale(2.05);
   filter: drop-shadow(0 0 12px var(--secondary-neon));
 }
 
