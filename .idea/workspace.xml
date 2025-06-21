@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/images/products/blue_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/brown_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/brown_flowered_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/grayish_green_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/green_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/green_flowered_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/light_brown_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/light_pink_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/light_rose_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/maroon_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/multicolor_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/pink_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/pink_flowered_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/rose_flowered_embroider_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/white_flowered_linen_saree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/products/white_lined_linen_saree.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fancy_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_saree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
