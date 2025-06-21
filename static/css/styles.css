@@ -1,19 +1,19 @@
 /* Import futuristic fonts */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600;800&family=Inter:wght@300;400;700&display=swap');
 
-/* Dynamic theme variables with new cyberpunk palette */
+/* Dynamic theme variables with vibrant cyberpunk palette */
 :root {
-  --primary-neon: #8b00ff; /* Deep electric violet */
-  --secondary-neon: #ff4d00; /* Neon orange */
-  --accent-neon: #cc00ff; /* Bright purple */
-  --dark-bg: #0c001a; /* Deep twilight indigo */
-  --glass-bg: rgba(255, 255, 255, 0.07); /* Subtle glass effect */
-  --glass-border: rgba(255, 255, 255, 0.1); /* Soft border */
+  --primary-neon: #00e6ff; /* Neon blue */
+  --secondary-neon: #ff0088; /* Hot pink */
+  --accent-neon: #00ffcc; /* Electric teal */
+  --dark-bg: #0a0015; /* Deep cosmic purple */
+  --glass-bg: rgba(255, 255, 255, 0.08); /* Subtle glass effect */
+  --glass-border: rgba(255, 255, 255, 0.12); /* Soft border */
   --glow-shadow: 0 0 10px var(--primary-neon), 0 0 20px var(--secondary-neon);
   --transition-speed: 0.3s; /* Smooth transitions */
-  --image-size: 280px; /* Slightly larger default image size */
-  --image-size-tablet: 220px; /* Tablet image size */
-  --image-size-mobile: 180px; /* Mobile image size */
+  --image-size: 300px; /* Default image size */
+  --image-size-tablet: 260px; /* Tablet image size */
+  --image-size-mobile: 240px; /* Increased mobile image size */
   --container-padding: clamp(1rem, 5vw, 2.5rem); /* Responsive padding */
 }
 
@@ -33,24 +33,25 @@ body {
   padding: var(--container-padding);
   line-height: 1.6;
   position: relative;
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
 }
 
-/* Dynamic background with moody gradient animation */
+/* Dynamic background with vibrant gradient animation */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background: radial-gradient(circle at 50% 50%, var(--primary-neon) 0%, transparent 60%),
-              radial-gradient(circle at 35% 80%, var(--secondary-neon) 0%, transparent 40%);
+              radial-gradient(circle at 30% 75%, var(--secondary-neon) 0%, transparent 45%);
   z-index: -2;
   opacity: 0.35;
   will-change: opacity;
-  animation: bgPulse 12s ease-in-out infinite;
+  animation: bgPulse 10s ease-in-out infinite;
 }
 
 @keyframes bgPulse {
   0%, 100% { opacity: 0.35; }
-  50% { opacity: 0.6; }
+  50% { opacity: 0.55; }
 }
 
 /* Optimized particle effect */
@@ -59,10 +60,10 @@ body::after {
   position: absolute;
   inset: 0;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><circle cx="2" cy="2" r="1" fill="white"/></svg>') repeat;
-  opacity: 0.06;
+  opacity: 0.07;
   z-index: -1;
   will-change: transform;
-  animation: driftParticles 28s linear infinite;
+  animation: driftParticles 25s linear infinite;
 }
 
 @keyframes driftParticles {
@@ -85,10 +86,10 @@ header {
 
 header:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 22px var(--primary-neon);
+  box-shadow: 0 0 20px var(--primary-neon);
 }
 
-/* Navigation with dynamic hover effects */
+/* Navigation with touch-friendly feedback */
 nav {
   display: flex;
   justify-content: center;
@@ -108,7 +109,7 @@ nav a {
   transition: color var(--transition-speed) ease, text-shadow var(--transition-speed) ease;
 }
 
-nav a:hover {
+nav a:active, nav a:focus {
   color: var(--accent-neon);
   text-shadow: 0 0 10px var(--accent-neon);
 }
@@ -125,14 +126,14 @@ nav a::after {
   transition: width var(--transition-speed) ease;
 }
 
-nav a:hover::after {
+nav a:active::after, nav a:focus::after {
   width: 80%;
 }
 
 /* Product grid with dynamic sizing */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: clamp(1rem, 4vw, 2rem);
   padding: var(--container-padding);
   max-width: 1200px;
@@ -150,24 +151,25 @@ nav a:hover::after {
   transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
-.product:hover {
+.product:active, .product:focus-within {
   transform: translateY(-10px);
-  box-shadow: 0 0 22px var(--primary-neon), 0 0 45px var(--secondary-neon);
+  box-shadow: 0 0 20px var(--primary-neon), 0 0 40px var(--secondary-neon);
 }
 
-/* Standardized image sizing with interactivity */
+/* Standardized image sizing with touch feedback */
 .product img {
   width: var(--image-size);
   max-height: var(--image-size);
-  object-fit: contain; /* Ensures full image is visible without cropping */
+  object-fit: contain; /* Ensures full image is visible */
   border-radius: 10px;
-  filter: drop-shadow(0 0 8px rgba(139, 0, 255, 0.5));
+  filter: drop-shadow(0 0 8px rgba(0, 230, 255, 0.5));
   transition: transform var(--transition-speed) ease, filter var(--transition-speed) ease;
   cursor: pointer;
+  touch-action: manipulation; /* Optimize touch responsiveness */
 }
 
-.product img:hover {
-  transform: scale(2.05);
+.product img:active, .product img:focus {
+  transform: scale(1.05);
   filter: drop-shadow(0 0 12px var(--secondary-neon));
 }
 
@@ -194,7 +196,7 @@ nav a:hover::after {
   max-height: 95vh;
   width: auto;
   height: auto;
-  object-fit: contain; /* Ensures full image is shown without cropping */
+  object-fit: contain; /* Ensures full image is shown */
   border-radius: 10px;
   box-shadow: var(--glow-shadow);
   animation: zoomIn 0.4s ease-out;
@@ -211,7 +213,7 @@ nav a:hover::after {
   transition: color var(--transition-speed) ease;
 }
 
-.modal-close:hover {
+.modal-close:active, .modal-close:focus {
   color: var(--accent-neon);
 }
 
@@ -256,11 +258,11 @@ nav a:hover::after {
   transition: left 0.4s ease;
 }
 
-.whatsapp-button:hover::after {
+.whatsapp-button:active::after, .whatsapp-button:focus::after {
   left: 100%;
 }
 
-.whatsapp-button:hover {
+.whatsapp-button:active, .whatsapp-button:focus {
   transform: translateY(-3px);
   box-shadow: 0 0 28px var(--accent-neon);
 }
@@ -322,5 +324,19 @@ header, .products, .whatsapp-button, footer {
 @media (min-resolution: 2dppx) {
   body::after {
     background-size: 2px 2px;
+  }
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: none) {
+  header:hover, .product:hover, nav a:hover, nav a:hover::after,
+  .whatsapp-button:hover, .whatsapp-button:hover::after, .modal-close:hover,
+  .product img:hover {
+    transform: none;
+    box-shadow: none;
+    color: inherit;
+    text-shadow: inherit;
+    filter: inherit;
+    width: 0;
   }
 }
