@@ -78,6 +78,8 @@ nav a, .dropdown-toggle {
   display: flex;
   align-items: center;
   border-radius: 8px;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 nav a:hover, nav a:active, nav a:focus, .dropdown-toggle:hover, .dropdown-toggle:active, .dropdown-toggle:focus {
@@ -108,20 +110,22 @@ nav a:hover, nav a:active, nav a:focus, .dropdown-toggle:hover, .dropdown-toggle
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 0.5rem); /* Add spacing below toggle */
   left: 0;
+  right: 0; /* Stretch to parent width */
   background: var(--card-bg);
   border-radius: 8px;
   box-shadow: var(--shadow);
-  min-width: 160px;
+  min-width: 140px;
+  max-width: 100%; /* Prevent overflow */
   padding: 0.5rem;
-  z-index: 100;
+  z-index: 1000; /* Ensure above other elements */
   opacity: 0;
   transform: translateY(8px);
   transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
 }
 
-.dropdown:hover .dropdown-menu, .dropdown-menu.show {
+.dropdown-menu.show {
   display: block;
   opacity: 1;
   transform: translateY(0);
@@ -136,6 +140,7 @@ nav a:hover, nav a:active, nav a:focus, .dropdown-toggle:hover, .dropdown-toggle
   transition: background var(--transition-speed) ease, color var(--transition-speed) ease;
   min-height: var(--touch-target-size);
   border-radius: 6px;
+  touch-action: manipulation;
 }
 
 .dropdown-menu a:hover, .dropdown-menu a:active, .dropdown-menu a:focus {
@@ -277,15 +282,18 @@ footer {
     gap: clamp(0.3rem, 1.5vw, 0.6rem);
     overflow-x: auto;
     padding: 0.5rem var(--container-padding);
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   }
   nav a, .dropdown-toggle {
     font-size: clamp(0.75rem, 2.3vw, 0.85rem);
     padding: 0.4rem 0.6rem;
   }
   .dropdown-menu {
-    left: 0;
     width: 100%;
-    min-width: 140px;
+    min-width: 120px;
+    max-width: 200px; /* Prevent overly wide dropdowns */
+    left: 0;
+    right: auto;
     transform: translateY(8px);
   }
 }
