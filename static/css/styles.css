@@ -1,20 +1,23 @@
-/* Import futuristic fonts */
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600;800&family=Inter:wght@300;400;700&display=swap');
+/* Import clean, modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-/* Dynamic theme variables with vibrant cyberpunk palette */
+/* Theme variables for Instagram-like aesthetic */
 :root {
-  --primary-neon: #00e6ff; /* Neon blue */
-  --secondary-neon: #ff0088; /* Hot pink */
-  --accent-neon: #00ffcc; /* Electric teal */
-  --dark-bg: #0a0015; /* Deep cosmic purple */
-  --glass-bg: rgba(255, 255, 255, 0.08); /* Subtle glass effect */
-  --glass-border: rgba(255, 255, 255, 0.12); /* Soft border */
-  --glow-shadow: 0 0 10px var(--primary-neon), 0 0 20px var(--secondary-neon);
+  --primary-color: #e1306c; /* Instagram pink */
+  --secondary-color: #405de6; /* Instagram blue */
+  --accent-color: #833ab4; /* Instagram purple */
+  --bg-gradient: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); /* Instagram gradient */
+  --text-dark: #262626; /* Dark text for readability */
+  --text-light: #ffffff; /* White text for contrast */
+  --card-bg: #ffffff; /* White cards */
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  --border-radius: 12px; /* Rounded corners */
   --transition-speed: 0.3s; /* Smooth transitions */
-  --image-size: 420px; /* Significantly increased default image size */
-  --image-size-tablet: 380px; /* Significantly increased tablet image size */
-  --image-size-mobile: 360px; /* Significantly increased mobile image size */
-  --container-padding: clamp(1rem, 5vw, 2.5rem); /* Responsive padding */
+  --image-size: 360px; /* Optimized for mobile */
+  --image-size-tablet: 320px; /* Tablet size */
+  --image-size-mobile: 280px; /* Mobile size */
+  --container-padding: clamp(0.8rem, 4vw, 1.5rem); /* Responsive padding */
+  --touch-target-size: 48px; /* Touch-friendly size */
 }
 
 /* Reset and base styles */
@@ -26,67 +29,29 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--dark-bg);
-  color: #fff;
+  background: var(--bg-gradient);
+  color: var(--text-dark);
   min-height: 100vh;
   overflow-x: hidden;
   padding: var(--container-padding);
-  line-height: 1.6;
-  position: relative;
-  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
 }
 
-/* Dynamic background with vibrant gradient animation */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at 50% 50%, var(--primary-neon) 0%, transparent 60%),
-              radial-gradient(circle at 30% 75%, var(--secondary-neon) 0%, transparent 45%);
-  z-index: -2;
-  opacity: 0.35;
-  will-change: opacity;
-  animation: bgPulse 10s ease-in-out infinite;
-}
-
-@keyframes bgPulse {
-  0%, 100% { opacity: 0.35; }
-  50% { opacity: 0.55; }
-}
-
-/* Optimized particle effect */
-body::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><circle cx="2" cy="2" r="1" fill="white"/></svg>') repeat;
-  opacity: 0.07;
-  z-index: -1;
-  will-change: transform;
-  animation: driftParticles 25s linear infinite;
-}
-
-@keyframes driftParticles {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-100vh); }
-}
-
-/* Header with glassmorphism */
+/* Header with Instagram-like style */
 header {
   text-align: center;
-  margin-bottom: calc(var(--container-padding) * 2);
+  margin-bottom: calc(var(--container-padding) * 1.5);
   padding: var(--container-padding);
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  border-radius: 15px;
-  box-shadow: var(--glow-shadow);
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 
-header:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px var(--primary-neon);
+header h1 {
+  font-size: clamp(1.4rem, 4.5vw, 1.8rem);
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 /* Navigation with dropdown */
@@ -94,40 +59,25 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: clamp(0.5rem, 2vw, 1rem);
-  position: relative;
+  gap: clamp(0.4rem, 1.5vw, 0.8rem);
 }
 
 nav a, .dropdown-toggle {
   text-decoration: none;
-  color: var(--secondary-neon);
-  font-family: 'Exo 2', sans-serif;
+  color: var(--text-dark);
   font-weight: 600;
-  font-size: clamp(0.9rem, 3vw, 1rem);
-  padding: 0.5rem;
-  text-shadow: 0 0 3px var(--secondary-neon);
-  transition: color var(--transition-speed) ease, text-shadow var(--transition-speed) ease;
+  font-size: clamp(0.85rem, 2.8vw, 0.95rem);
+  padding: 0.6rem 1rem;
+  transition: color var(--transition-speed) ease, background var(--transition-speed) ease;
+  min-height: var(--touch-target-size);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
 }
 
-nav a:active, nav a:focus, .dropdown-toggle:active, .dropdown-toggle:focus {
-  color: var(--accent-neon);
-  text-shadow: 0 0 10px var(--accent-neon);
-}
-
-nav a::after, .dropdown-toggle::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: var(--accent-neon);
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width var(--transition-speed) ease;
-}
-
-nav a:active::after, nav a:focus::after, .dropdown-toggle:active::after, .dropdown-toggle:focus::after {
-  width: 80%;
+nav a:hover, nav a:active, nav a:focus, .dropdown-toggle:hover, .dropdown-toggle:active, .dropdown-toggle:focus {
+  color: var(--primary-color);
+  background: rgba(225, 48, 108, 0.1); /* Light pink hover */
 }
 
 /* Dropdown styles */
@@ -137,13 +87,12 @@ nav a:active::after, nav a:focus::after, .dropdown-toggle:active::after, .dropdo
 
 .dropdown-toggle {
   cursor: pointer;
-  position: relative;
 }
 
 .dropdown-toggle::before {
   content: '▼';
-  font-size: 0.7rem;
-  margin-left: 0.3rem;
+  font-size: 0.6rem;
+  margin-left: 0.4rem;
   transition: transform var(--transition-speed) ease;
 }
 
@@ -157,16 +106,14 @@ nav a:active::after, nav a:focus::after, .dropdown-toggle:active::after, .dropdo
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  border-radius: 10px;
-  box-shadow: var(--glow-shadow);
-  min-width: 200px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  min-width: 180px;
   padding: 0.5rem;
   z-index: 100;
   opacity: 0;
-  transform: translateX(-50%) translateY(10px);
+  transform: translateX(-50%) translateY(8px);
   transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
 }
 
@@ -178,62 +125,57 @@ nav a:active::after, nav a:focus::after, .dropdown-toggle:active::after, .dropdo
 
 .dropdown-menu a {
   display: block;
-  padding: 0.5rem 1rem;
-  color: var(--secondary-neon);
+  padding: 0.6rem 1rem;
+  color: var(--text-dark);
   text-decoration: none;
-  font-size: clamp(0.85rem, 2.5vw, 0.95rem);
-  text-shadow: 0 0 3px var(--secondary-neon);
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
   transition: background var(--transition-speed) ease, color var(--transition-speed) ease;
+  min-height: var(--touch-target-size);
+  border-radius: 6px;
 }
 
 .dropdown-menu a:hover, .dropdown-menu a:active, .dropdown-menu a:focus {
-  background: var(--primary-neon);
-  color: var(--dark-bg);
-  text-shadow: none;
-  border-radius: 5px;
+  background: rgba(225, 48, 108, 0.1);
+  color: var(--primary-color);
 }
 
-/* Product grid with dynamic sizing */
+/* Product grid */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr));
-  gap: clamp(1rem, 4vw, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: clamp(0.8rem, 3vw, 1.2rem);
   padding: var(--container-padding);
-  max-width: 1400px; /* Increased to accommodate larger images */
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .product {
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  padding: clamp(1.2rem, 3vw, 1.5rem); /* Slightly increased padding */
+  background: var(--card-bg);
+  padding: clamp(0.8rem, 2.5vw, 1rem);
   text-align: center;
-  border-radius: 15px;
-  box-shadow: var(--glow-shadow);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
   transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
-.product:active, .product:focus-within {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px var(--primary-neon), 0 0 40px var(--secondary-neon);
+.product:hover, .product:active, .product:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Standardized image sizing with touch feedback */
+/* Product images */
 .product img {
   width: var(--image-size);
-  height: var(--image-size); /* Explicitly set height to match width */
-  object-fit: contain; /* Ensures full image is visible */
-  border-radius: 10px;
-  filter: drop-shadow(0 0 8px rgba(0, 230, 255, 0.5));
-  transition: transform var(--transition-speed) ease, filter var(--transition-speed) ease;
+  height: var(--image-size);
+  object-fit: cover; /* Instagram-like image cropping */
+  border-radius: 8px;
+  transition: transform var(--transition-speed) ease;
   cursor: pointer;
-  touch-action: manipulation; /* Optimize touch responsiveness */
+  touch-action: manipulation;
 }
 
-.product img:active, .product img:focus {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 12px var(--secondary-neon));
+.product img:hover, .product img:active, .product img:focus {
+  transform: scale(1.02);
 }
 
 /* Full-screen image modal */
@@ -241,12 +183,12 @@ nav a:active::after, nav a:focus::after, .dropdown-toggle:active::after, .dropdo
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 1000;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
 }
 
 .modal.show {
@@ -255,96 +197,68 @@ nav a:active::after, nav a:focus::after, .dropdown-toggle:active::after, .dropdo
 }
 
 .modal img {
-  max-width: 95vw;
-  max-height: 95vh;
+  max-width: 90vw;
+  max-height: 90vh;
   width: auto;
   height: auto;
-  object-fit: contain; /* Ensures full image is shown */
-  border-radius: 10px;
-  box-shadow: var(--glow-shadow);
-  animation: elasticZoom 0.6s ease-out forwards;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  color: var(--secondary-neon);
+  top: 0.8rem;
+  right: 0.8rem;
+  font-size: 1.6rem;
+  color: var(--text-light);
   cursor: pointer;
-  text-shadow: 0 0 5px var(--secondary-neon);
   transition: color var(--transition-speed) ease;
 }
 
-.modal-close:active, .modal-close:focus {
-  color: var(--accent-neon);
+.modal-close:hover, .modal-close:active, .modal-close:focus {
+  color: var(--primary-color);
 }
 
-@keyframes elasticZoom {
-  0% { transform: scale(0.7); opacity: 0; }
-  60% { transform: scale(1.1); opacity: 1; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-/* WhatsApp button with dynamic shine */
+/* WhatsApp button */
 .whatsapp-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: calc(var(--container-padding) * 2) auto;
-  padding: clamp(0.8rem, 3vw, 1rem) clamp(1.5rem, 5vw, 2rem);
-  background: linear-gradient(45deg, var(--accent-neon), var(--secondary-neon));
-  color: #fff;
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 800;
+  margin: calc(var(--container-padding) * 1.5) auto;
+  padding: clamp(0.7rem, 2.5vw, 0.9rem) clamp(1.2rem, 4vw, 1.8rem);
+  background: var(--primary-color);
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 50px;
-  box-shadow: var(--glow-shadow);
-  position: relative;
-  overflow: hidden;
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  border-radius: 40px;
+  box-shadow: var(--shadow);
+  transition: background var(--transition-speed) ease, transform var(--transition-speed) ease;
+  min-height: var(--touch-target-size);
 }
 
-.whatsapp-button::before {
-  content: '📱';
-  font-size: clamp(1rem, 4vw, 1.2rem);
+.whatsapp-button:hover, .whatsapp-button:active, .whatsapp-button:focus {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
 }
 
-.whatsapp-button::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.4s ease;
+.whatsapp-button img {
+  width: 24px;
+  height: 24px;
 }
 
-.whatsapp-button:active::after, .whatsapp-button:focus::after {
-  left: 100%;
-}
-
-.whatsapp-button:active, .whatsapp-button:focus {
-  transform: translateY(-3px);
-  box-shadow: 0 0 28px var(--accent-neon);
-}
-
-/* Footer with glassmorphism */
+/* Footer */
 footer {
-  margin-top: calc(var(--container-padding) * 2);
+  margin-top: calc(var(--container-padding) * 1.5);
   text-align: center;
   padding: var(--container-padding);
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  border-radius: 15px;
-  box-shadow: var(--glow-shadow);
-  font-family: 'Exo 2', sans-serif;
-  color: var(--secondary-neon);
-  text-shadow: 0 0 3px var(--secondary-neon);
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  font-size: clamp(0.75rem, 2.2vw, 0.85rem);
+  color: var(--text-dark);
 }
 
 /* Responsive design */
@@ -357,13 +271,17 @@ footer {
   }
   nav {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
   }
   .dropdown-menu {
     position: static;
     transform: none;
     width: 100%;
     text-align: center;
+    border-radius: 6px;
+  }
+  .dropdown-toggle, nav a {
+    justify-content: center;
   }
 }
 
@@ -378,21 +296,17 @@ footer {
     width: 100%;
     justify-content: center;
   }
+  header h1 {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+  }
 }
 
 /* Load animation */
-@keyframes fadeSlideIn {
-  from { opacity: 0; transform: translateY(30px); }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 header, .products, .whatsapp-button, footer {
-  animation: fadeSlideIn 0.8s ease-out forwards;
-}
-
-/* High-resolution optimization */
-@media (min-resolution: 2dppx) {
-  body::after {
-    background-size: 2px 2px;
-  }
+  animation: fadeIn 0.5s ease-out forwards;
 }
