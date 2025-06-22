@@ -5,7 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xl_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/nighties/vm_nighty_xl_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/xl_nighties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cotton_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cotton_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fancy_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/plain_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plain_saree.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +68,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -32,19 +85,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/kumaran_html_only/static/images/products&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only/static/images/nighties"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\nighties" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\products" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\css" />

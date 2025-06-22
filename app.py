@@ -27,5 +27,10 @@ def fancy_saree():
     logger.info("Entering fancy_saree route")
     return render_template('fancy_saree.html')
 
+@app.route('/category/xl_nighties')
+def xl_nighties():
+    logger.info("Entering xl_nighties route")
+    return render_template('xl_nighties.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

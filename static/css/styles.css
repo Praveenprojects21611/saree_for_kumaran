@@ -65,8 +65,10 @@ nav {
   flex-wrap: nowrap;
   white-space: nowrap;
   padding: 0.5rem 0;
+  position: relative; /* Ensure dropdowns can position relative to nav */
 }
 
+/* Navigation links and dropdown toggle */
 nav a, .dropdown-toggle {
   text-decoration: none;
   color: var(--text-dark);
@@ -289,12 +291,19 @@ footer {
     padding: 0.4rem 0.6rem;
   }
   .dropdown-menu {
-    width: 100%;
-    min-width: 120px;
-    max-width: 200px; /* Prevent overly wide dropdowns */
-    left: 0;
-    right: auto;
-    transform: translateY(8px);
+    position: fixed; /* Break out of nav's overflow */
+    top: auto; /* Will be set dynamically by JS */
+    left: var(--container-padding);
+    right: var(--container-padding);
+    width: auto;
+    min-width: 160px;
+    max-width: calc(100vw - 2 * var(--container-padding)); /* Fit within viewport */
+    transform: translateY(0); /* Remove slide animation for fixed positioning */
+    transition: opacity var(--transition-speed) ease;
+  }
+  .dropdown-menu.show {
+    display: block;
+    opacity: 1;
   }
 }
 
