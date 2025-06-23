@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/l_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/l_size_chudi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +42,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only/static/images/chudi"
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\chudi" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\products" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\nighties" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images" />
-      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\products" />
