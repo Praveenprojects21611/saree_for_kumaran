@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 import logging
 
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -31,6 +32,11 @@ def fancy_saree():
 def xl_nighties():
     logger.info("Entering xl_nighties route")
     return render_template('xl_nighties.html')
+
+@app.route('/category/fancy_pattu_saree')
+def fancy_pattu_saree():
+    logger.info("Entering fancy_pattu_saree route")
+    return render_template('fancy_pattu_saree.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
