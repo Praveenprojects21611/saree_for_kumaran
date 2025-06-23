@@ -38,5 +38,10 @@ def fancy_pattu_saree():
     logger.info("Entering fancy_pattu_saree route")
     return render_template('fancy_pattu_saree.html')
 
+@app.route('/category/l_size_chudi')
+def l_size_chudi():
+    logger.info("Entering l_size_chudi route")
+    return render_template('l_size_chudi.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
