@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XL_size_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/xl_size_chudi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cotton_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cotton_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fancy_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_saree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/l_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/l_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/plain_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plain_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xl_nighties.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_nighties.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +62,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only"
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only/static/images/chudi"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\chudi" />
+      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\products" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\nighties" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\products" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images" />
-      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static" />
     </key>
   </component>
   <component name="RunManager">

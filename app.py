@@ -43,5 +43,10 @@ def l_size_chudi():
     logger.info("Entering l_size_chudi route")
     return render_template('l_size_chudi.html')
 
+@app.route('/category/xl_size_chudi')
+def xl_size_chudi():
+    logger.info("Entering xl_size_chudi route")
+    return render_template('xl_size_chudi.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
