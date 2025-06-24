@@ -4,7 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="" />
+    <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXL_size_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/chudi/pranjal_readymade_chudi_XXXL_size_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/xxl_size_chudi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/xxxl_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cotton_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cotton_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fancy_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/l_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/l_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/plain_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plain_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xl_nighties.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_nighties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_size_chudi.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,17 +94,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.app.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only/static/images/chudi"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/kumaran_html_only/static/images/chudi&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\chudi" />
