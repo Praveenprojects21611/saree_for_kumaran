@@ -5,52 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_printed_embroidery_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_2ndtype_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_2ndtype_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_2ndtype_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_2ndtype_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_2ndtype_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/rayon_digital_printed_embroidery_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/tissue_digital_printed_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/tissue_digital_printed_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/tissue_digital_printed_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/design_blouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/design_blouse.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
