@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/design_blouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/design_blouse.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
