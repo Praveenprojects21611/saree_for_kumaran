@@ -5,28 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/brown_green_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/dark_green_pink_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/green_brown_sandal_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/green_checked_sandal_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/green_yellow_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/orange_blue_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/pink_dark_green_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/pink_sky_blue_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/red_dark_blue_fancy_pattu_saree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/products/yellow_pink_silver_fancy_pattu_saree.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/design_blouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/design_blouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,22 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/kumaran_html_only/static/images/blouse&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only/static/images/products"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\products" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\blouse" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\chudi" />
-      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\products" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\nighties" />
     </key>
