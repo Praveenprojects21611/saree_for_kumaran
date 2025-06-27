@@ -68,5 +68,12 @@ def design_blouse_44():
     logger.info("Entering design_blouse_44 route")
     return render_template('design_blouse_44.html')
 
+@app.route('/category/xxl_nighties')
+def xxl_nighties():
+    logger.info("Entering xxl_nighties route")
+    return render_template('xxl_nighties.html')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
