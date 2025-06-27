@@ -58,10 +58,15 @@ def xxxl_size_chudi():
     logger.info("Entering xxxl_size_chudi route")
     return render_template('xxxl_size_chudi.html')
 
-@app.route('/category/design_blouse')
-def design_blouse():
-    logger.info("Entering design_blouse route")
-    return render_template('design_blouse.html')
+@app.route('/category/design_blouse_36')
+def design_blouse_36():
+    logger.info("Entering design_blouse_36 route")
+    return render_template('design_blouse_36.html')
+
+@app.route('/category/design_blouse_44')
+def design_blouse_44():
+    logger.info("Entering design_blouse_44 route")
+    return render_template('design_blouse_44.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

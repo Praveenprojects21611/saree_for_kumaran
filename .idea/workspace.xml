@@ -4,7 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="" />
+    <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_42.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_44.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/blouse/cotton_design_blouse_46.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/design_blouse_44.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cotton_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cotton_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/design_blouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/design_blouse_36.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fancy_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/l_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/l_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/plain_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plain_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xl_nighties.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_nighties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xxl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxl_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xxxl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxxl_size_chudi.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,14 +79,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only/static/images/nighties"
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/kumaran_html_only/static/images/blouse"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\blouse" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\nighties" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\products" />
-      <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\blouse" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only\static\images\chudi" />
       <recent name="C:\Users\User\PycharmProjects\kumaran_html_only" />
     </key>
