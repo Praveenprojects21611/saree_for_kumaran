@@ -74,7 +74,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-family: 'Orbitron', sans-serif;
   font-size: clamp(1.4rem, 4.5vw, 1.8rem);
   color: var(--primary-neon-blue);
   font-weight: 600;
@@ -87,7 +87,6 @@ header h1 {
 nav {
   display: flex;
   flex-direction: row;
-  Ascending
   justify-content: center;
   align-items: center;
   gap: var(--nav-gap);
@@ -173,7 +172,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   min-width: 140px;
   max-width: 100%;
   padding: 0.5rem;
-  z-index: 1000;
+  z-index: 2000; /* Increased z-index */
   opacity: 0;
   transform: translateY(8px);
   transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
@@ -412,6 +411,7 @@ footer .social-icons a:hover, footer .social-icons a:active, footer .social-icon
   nav {
     gap: clamp(0.3rem, 1.5vw, 0.6rem);
     overflow-x: auto;
+    overflow-y: visible; /* Ensure dropdowns aren't clipped */
     padding: 0.5rem var(--container-padding);
     -webkit-overflow-scrolling: touch;
   }
@@ -421,13 +421,13 @@ footer .social-icons a:hover, footer .social-icons a:active, footer .social-icon
   }
   .dropdown-menu {
     position: fixed;
-    top: auto;
+    top: calc(var(--touch-target-size) + 2 * var(--container-padding)); /* Position below nav */
     left: var(--container-padding);
     right: var(--container-padding);
     width: auto;
     min-width: 160px;
     max-width: calc(100vw - 2 * var(--container-padding));
-    transform: translateY(0);
+    z-index: 3000; /* Higher z-index for mobile */
     transition: opacity var(--transition-speed) ease;
   }
   .dropdown-menu.show {
