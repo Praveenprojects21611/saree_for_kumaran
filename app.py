@@ -73,6 +73,11 @@ def xxl_nighties():
     logger.info("Entering xxl_nighties route")
     return render_template('xxl_nighties.html')
 
+@app.route('/category/xxxl_nighties')
+def xxxl_nighties():
+    logger.info("Entering xxxl_nighties route")
+    return render_template('xxxl_nighties.html')
+
 
 
 if __name__ == '__main__':
