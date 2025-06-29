@@ -5,65 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_38.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_39.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_41.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_42.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nighties/pranjal_nighty_xxxl_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/video/orange_kuppadam_Pattu.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/xxxl_nighties.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cotton_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cotton_saree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/design_blouse_36.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/design_blouse_36.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/design_blouse_44.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/design_blouse_44.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fancy_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_saree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/l_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/l_size_chudi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/plain_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plain_saree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/xl_nighties.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_nighties.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/xl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_size_chudi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/xxl_nighties.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxl_nighties.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/xxl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxl_size_chudi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/xxxl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxxl_size_chudi.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
