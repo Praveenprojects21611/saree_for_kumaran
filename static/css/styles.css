@@ -69,6 +69,7 @@ header {
   box-shadow: var(--shadow);
   position: relative;
   overflow: visible; /* Prevent clipping */
+  z-index: 100; /* Below dropdown */
 }
 
 header h1 {
@@ -93,6 +94,8 @@ nav {
   padding: 0.5rem 0;
   position: relative;
   overflow: visible; /* Ensure dropdowns are not clipped */
+  min-height: var(--touch-target-size); /* Space for dropdown */
+  z-index: 200; /* Below dropdown */
 }
 
 /* Navigation links and dropdown toggle */
@@ -173,7 +176,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   max-height: 50vh; /* Limit height to avoid overflow */
   overflow-y: auto; /* Scroll if too long */
   padding: 0.5rem;
-  z-index: 5000; /* High z-index to appear above all */
+  z-index: 10000; /* Extremely high z-index */
   opacity: 0;
   transform: translateY(8px);
   transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
@@ -212,6 +215,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   padding: var(--container-padding);
   max-width: 1100px;
   margin: 0 auto;
+  z-index: 50; /* Below dropdown */
 }
 
 .product {
@@ -268,7 +272,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 
 .product .view-details {
   display: inline-block;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.2rem;
   background: var(--accent-blue);
   color: var(--text-light);
   text-decoration: none;
@@ -346,7 +350,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   border-radius: 40px;
   box-shadow: var(--glow-effect);
   transition: background var(--transition-speed) ease, transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-  min-height: touch-target-size);
+  min-height: var(--touch-target-size);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -373,6 +377,7 @@ footer {
   box-shadow: var(--shadow);
   font-size: clamp(0.75rem, 2.2vw, 0.85rem);
   color: var(--text-light);
+  z-index: 100; /* Below dropdown */
 }
 
 footer .social-icons {
@@ -413,28 +418,28 @@ footer .social-icons a:hover, footer .social-icons a:active, footer .social-icon
     overflow-y: visible; /* Ensure dropdowns aren't clipped */
     padding: 0.5rem var(--container-padding);
     -webkit-overflow-scrolling: touch;
+    min-height: var(--touch-target-size);
   }
   nav a, .dropdown-toggle {
     font-size: clamp(0.75rem, 2.3vw, 0.85rem);
     padding: 0.4rem 0.6rem;
   }
   .dropdown-menu {
-    position: absolute; /* Use absolute to anchor to dropdown */
-    top: calc(100% + 0.5rem); /* Position below toggle */
-    left: 0;
-    right: 0;
+    position: fixed; /* Relative to viewport */
+    top: calc(var(--touch-target-size) + var(--container-padding) + 2rem); /* Below nav and header */
+    left: var(--container-padding);
+    right: var(--container-padding);
     width: auto;
     min-width: 160px;
     max-width: calc(100vw - 2 * var(--container-padding));
-    max-height: 50vh; /* Limit height */
+    max-height: calc(50vh - var(--touch-target-size)); /* Fit within viewport */
     overflow-y: auto; /* Scroll if needed */
-    z-index: 5000; /* High z-index */
-    transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+    z-index: 10000; /* Above all else */
+    transition: opacity var(--transition-speed) ease;
   }
   .dropdown-menu.show {
     display: block;
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
