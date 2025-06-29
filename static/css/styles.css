@@ -20,9 +20,9 @@
   --image-size: 400px; /* Large images for impact */
   --image-size-tablet: 360px; /* Tablet size */
   --image-size-mobile: 320px; /* Mobile size */
-  --container-padding: clamp(1.2rem, 4vw, 2.2rem); /* Generous padding */
-  --touch-target-size: 56px; /* Large touch targets */
-  --nav-gap: clamp(0.8rem, 2.5vw, 1.4rem); /* Spacious navigation */
+  --container-padding: clamp(1rem, 3vw, 1.8rem); /* Adjusted for mobile */
+  --touch-target-size: 48px; /* Smaller touch targets for compact nav */
+  --nav-gap: clamp(0.3rem, 1vw, 0.6rem); /* Tighter gap for mobile */
 }
 
 /* Dynamic gradient animation */
@@ -57,7 +57,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background: var(--bg-gradient);
   background-size: 200% 200%;
-  animation: gradientFlow 10s ease infinite; /* Fast for dynamic feel */
+  animation: gradientFlow 10s ease infinite;
   color: var(--text-dark);
   min-height: 100vh;
   overflow-x: hidden;
@@ -81,30 +81,37 @@ header {
 
 header h1 {
   font-family: 'Exo 2', sans-serif;
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(1.8rem, 4.5vw, 2.2rem);
   color: var(--primary-neon-blue);
   font-weight: 700;
   text-shadow: var(--glow-effect);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
 }
 
-/* Navigation with horizontal layout */
+/* Navigation with horizontal scroll for mobile */
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start; /* Align left for scrolling */
   align-items: center;
   gap: var(--nav-gap);
   flex-wrap: nowrap;
   white-space: nowrap;
-  padding: 0.8rem 0;
-  background: rgba(26, 28, 43, 0.9); /* Semi-transparent charcoal */
+  padding: 0.6rem var(--container-padding);
+  background: rgba(26, 28, 43, 0.9);
   border-radius: var(--border-radius);
   position: relative;
-  overflow: visible;
+  overflow-x: auto; /* Enable horizontal scroll */
+  overflow-y: visible; /* Prevent dropdown clipping */
   min-height: var(--touch-target-size);
   z-index: 200;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* Hide scrollbar for cleaner look */
+}
+
+nav::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
 }
 
 /* Navigation links and dropdown toggle */
@@ -113,13 +120,13 @@ nav a, .dropdown-toggle {
   color: var(--primary-neon-blue);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  padding: 0.8rem 1.4rem;
+  font-size: clamp(0.85rem, 2.2vw, 0.95rem); /* Smaller for mobile */
+  padding: 0.5rem 0.8rem; /* Compact padding */
   transition: color var(--transition-speed) ease, box-shadow var(--transition-speed) ease, transform var(--transition-speed) ease;
   min-height: var(--touch-target-size);
   display: flex;
   align-items: center;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   touch-action: manipulation;
   position: relative;
@@ -139,8 +146,8 @@ nav a::after, .dropdown-toggle::after {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background: var(--primary-neon-blue);
   border-radius: 50%;
   opacity: 0;
@@ -163,8 +170,8 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 
 .dropdown-toggle::before {
   content: '▼';
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  margin-left: 0.4rem;
   transition: transform var(--transition-speed) ease;
 }
 
@@ -174,39 +181,37 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 
 .dropdown-menu {
   display: none;
-  position: absolute;
-  top: calc(100% + 0.8rem);
-  left: 0;
-  right: 0;
+  position: fixed; /* Fixed to viewport for mobile */
+  top: calc(var(--touch-target-size) + var(--container-padding) + 2rem);
+  left: var(--container-padding);
+  right: var(--container-padding);
   background: var(--card-bg);
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: var(--shadow);
-  min-width: 180px;
-  max-width: 100%;
-  max-height: 50vh;
+  min-width: 160px;
+  max-width: calc(100vw - 2 * var(--container-padding));
+  max-height: calc(50vh - var(--touch-target-size));
   overflow-y: auto;
-  padding: 0.8rem;
+  padding: 0.6rem;
   z-index: 10000;
   opacity: 0;
-  transform: translateY(10px);
-  transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: opacity var(--transition-speed) ease;
 }
 
 .dropdown-menu.show {
   display: block;
   opacity: 1;
-  transform: translateY(0);
 }
 
 .dropdown-menu a {
   display: block;
-  padding: 0.7rem 1.4rem;
+  padding: 0.6rem 1.2rem;
   color: var(--text-dark);
   text-decoration: none;
-  font-size: clamp(0.9rem, 2.3vw, 1rem);
+  font-size: clamp(0.85rem, 2.2vw, 0.95rem);
   transition: background var(--transition-speed) ease, color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
   min-height: var(--touch-target-size);
-  border-radius: 10px;
+  border-radius: 8px;
   touch-action: manipulation;
 }
 
@@ -220,17 +225,17 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 /* Product grid */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
-  gap: clamp(1.2rem, 3vw, 1.8rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: clamp(1rem, 3vw, 1.5rem);
   padding: var(--container-padding);
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
   z-index: 50;
 }
 
 .product {
   background: var(--card-bg);
-  padding: clamp(1.2rem, 2.5vw, 1.5rem);
+  padding: clamp(1rem, 2.5vw, 1.2rem);
   text-align: center;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
@@ -265,32 +270,32 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 /* Product details */
 .product h3 {
   font-family: 'Exo 2', sans-serif;
-  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
   color: var(--primary-magenta);
-  margin: 1rem 0 0.5rem;
+  margin: 0.8rem 0 0.4rem;
   text-shadow: var(--glow-magenta);
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
 }
 
 .product .price {
   font-weight: 500;
   color: var(--primary-neon-blue);
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 0.8rem;
   text-shadow: 0 0 8px rgba(0, 221, 235, 0.4);
 }
 
 .product .view-details {
   display: inline-block;
-  padding: 0.8rem 1.6rem;
+  padding: 0.7rem 1.4rem;
   background: var(--primary-magenta);
   color: var(--text-light);
   text-decoration: none;
   border-radius: 12px;
-  font-size: clamp(1rem, 2.3vw, 1.1rem);
+  font-size: clamp(0.9rem, 2.3vw, 1rem);
   transition: background var(--transition-speed) ease, box-shadow var(--transition-speed) ease, transform var(--transition-speed) ease;
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
   box-shadow: var(--glow-magenta);
 }
 
@@ -333,9 +338,9 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 
 .modal-close {
   position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
-  font-size: 2rem;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.8rem;
   color: var(--text-light);
   cursor: pointer;
   transition: color var(--transition-speed) ease, text-shadow var(--transition-speed) ease;
@@ -351,9 +356,9 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
   margin: calc(var(--container-padding) * 1.5) auto;
-  padding: clamp(0.9rem, 2.5vw, 1.2rem) clamp(1.6rem, 4vw, 2.2rem);
+  padding: clamp(0.8rem, 2.5vw, 1rem) clamp(1.4rem, 4vw, 2rem);
   background: var(--primary-neon-blue);
   color: var(--text-light);
   font-family: 'Exo 2', sans-serif;
@@ -364,7 +369,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   transition: background var(--transition-speed) ease, transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
   min-height: var(--touch-target-size);
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
 }
 
 .whatsapp-button:hover, .whatsapp-button:active, .whatsapp-button:focus {
@@ -375,8 +380,8 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 }
 
 .whatsapp-button img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
 /* Footer */
@@ -387,26 +392,26 @@ footer {
   background: var(--primary-charcoal);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  font-size: clamp(0.9rem, 2.2vw, 1rem);
+  font-size: clamp(0.85rem, 2.2vw, 0.95rem);
   color: var(--text-light);
   z-index: 100;
 }
 
 footer .social-icons {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 footer .social-icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   background: var(--primary-neon-blue);
   color: var(--text-light);
   text-decoration: none;
   border-radius: 50%;
-  margin: 0 0.6rem;
+  margin: 0 0.5rem;
   transition: background var(--transition-speed) ease, box-shadow var(--transition-speed) ease, transform var(--transition-speed) ease;
 }
 
@@ -426,16 +431,16 @@ footer .social-icons a:hover, footer .social-icons a:active, footer .social-icon
     grid-template-columns: 1fr;
   }
   nav {
-    gap: clamp(0.5rem, 1.5vw, 0.9rem);
+    gap: var(--nav-gap);
     overflow-x: auto;
     overflow-y: visible;
-    padding: 0.8rem var(--container-padding);
+    padding: 0.6rem var(--container-padding);
     -webkit-overflow-scrolling: touch;
     min-height: var(--touch-target-size);
   }
   nav a, .dropdown-toggle {
-    font-size: clamp(0.9rem, 2.3vw, 1rem);
-    padding: 0.6rem 0.9rem;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    padding: 0.4rem 0.7rem; /* Tighter padding */
   }
   .dropdown-menu {
     position: fixed;
@@ -443,7 +448,7 @@ footer .social-icons a:hover, footer .social-icons a:active, footer .social-icon
     left: var(--container-padding);
     right: var(--container-padding);
     width: auto;
-    min-width: 180px;
+    min-width: 160px;
     max-width: calc(100vw - 2 * var(--container-padding));
     max-height: calc(50vh - var(--touch-target-size));
     overflow-y: auto;
@@ -468,16 +473,16 @@ footer .social-icons a:hover, footer .social-icons a:active, footer .social-icon
     justify-content: center;
   }
   header h1 {
-    font-size: clamp(1.6rem, 4vw, 1.9rem);
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
   }
   nav {
-    gap: clamp(0.4rem, 1vw, 0.6rem);
+    gap: var(--nav-gap);
   }
 }
 
 /* Load animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
