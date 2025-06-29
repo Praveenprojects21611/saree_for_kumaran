@@ -1,20 +1,20 @@
 /* Import clean, modern fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap');
 
-/* Theme variables with enhanced AI-inspired colors and effects */
+/* Theme variables with saree-inspired colors and AI effects */
 :root {
-  --primary-neon-blue: #00D4FF; /* Neon blue for CTAs and accents */
-  --primary-dark-navy: #0A0F2B; /* Dark navy for backgrounds */
-  --primary-grey: #B0B7C3; /* Cool grey for secondary elements */
-  --secondary-white: #FFFFFF; /* White for contrast */
-  --accent-purple: #7B00FF; /* Neon purple for links and hover effects */
-  --bg-gradient: linear-gradient(45deg, #0A0F2B, #1A2A5A, #00D4FF, #7B00FF); /* Dynamic AI gradient */
-  --text-dark: #0A0F2B; /* Dark navy for readability */
+  --primary-gold: #D4A017; /* Luxurious gold for CTAs and accents */
+  --primary-maroon: #8B1E3F; /* Elegant maroon for headers and buttons */
+  --primary-green: #2E8B57; /* Emerald green for WhatsApp and prices */
+  --secondary-cream: #FFF8E7; /* Soft cream for backgrounds */
+  --accent-blue: #4169E1; /* Trustworthy blue for links */
+  --bg-gradient: linear-gradient(45deg, #8B1E3F, #D4A017, #2E8B57, #FFF8E7); /* Saree-inspired gradient with AI flow */
+  --text-dark: #333333; /* Charcoal gray for readability */
   --text-light: #FFFFFF; /* White text for contrast */
-  --card-bg: #1A1A3A; /* Slightly lighter navy for cards */
-  --shadow: 0 2px 8px rgba(0, 212, 255, 0.3); /* Neon blue shadow */
-  --glow-effect: 0 0 12px rgba(0, 212, 255, 0.6), 0 0 20px rgba(0, 212, 255, 0.3); /* Enhanced glow */
-  --glow-purple: 0 0 12px rgba(123, 0, 255, 0.6), 0 0 20px rgba(123, 0, 255, 0.3); /* Purple glow */
+  --card-bg: #FFFFFF; /* White cards */
+  --shadow: 0 2px 8px rgba(212, 160, 23, 0.3); /* Gold-tinted shadow */
+  --glow-effect: 0 0 12px rgba(212, 160, 23, 0.6), 0 0 20px rgba(212, 160, 23, 0.3); /* Gold glow */
+  --glow-blue: 0 0 12px rgba(65, 105, 225, 0.6), 0 0 20px rgba(65, 105, 225, 0.3); /* Blue glow */
   --border-radius: 12px; /* Rounded corners */
   --transition-speed: 0.3s; /* Smooth transitions */
   --image-size: 360px; /* Optimized for mobile */
@@ -34,9 +34,9 @@
 
 /* Pulsating glow effect */
 @keyframes pulseGlow {
-  0% { box-shadow: 0 0 8px rgba(0, 212, 255, 0.4); }
-  50% { box-shadow: 0 0 16px rgba(0, 212, 255, 0.7); }
-  100% { box-shadow: 0 0 8px rgba(0, 212, 255, 0.4); }
+  0% { box-shadow: 0 0 8px rgba(212, 160, 23, 0.4); }
+  50% { box-shadow: 0 0 16px rgba(212, 160, 23, 0.7); }
+  100% { box-shadow: 0 0 8px rgba(212, 160, 23, 0.4); }
 }
 
 /* Reset and base styles */
@@ -51,7 +51,7 @@ body {
   background: var(--bg-gradient);
   background-size: 200% 200%;
   animation: gradientFlow 15s ease infinite;
-  color: var(--primary-grey);
+  color: var(--text-dark);
   min-height: 100vh;
   overflow-x: hidden;
   padding: var(--container-padding);
@@ -64,19 +64,17 @@ header {
   text-align: center;
   margin-bottom: calc(var(--container-padding) * 1.5);
   padding: var(--container-padding);
-  background: var(--bg-gradient);
-  background-size: 200% 200%;
-  animation: gradientFlow 10s ease infinite;
+  background: var(--primary-maroon);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* Prevent clipping */
 }
 
 header h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: clamp(1.4rem, 4.5vw, 1.8rem);
-  color: var(--primary-neon-blue);
+  color: var(--primary-gold);
   font-weight: 600;
   text-shadow: var(--glow-effect);
   text-transform: uppercase;
@@ -94,12 +92,13 @@ nav {
   white-space: nowrap;
   padding: 0.5rem 0;
   position: relative;
+  overflow: visible; /* Ensure dropdowns are not clipped */
 }
 
 /* Navigation links and dropdown toggle */
 nav a, .dropdown-toggle {
   text-decoration: none;
-  color: var(--primary-neon-blue);
+  color: var(--primary-gold);
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: clamp(0.8rem, 2.5vw, 0.9rem);
@@ -115,7 +114,7 @@ nav a, .dropdown-toggle {
 }
 
 nav a:hover, nav a:active, nav a:focus, .dropdown-toggle:hover, .dropdown-toggle:active, .dropdown-toggle:focus {
-  color: var(--secondary-white);
+  color: var(--text-light);
   box-shadow: var(--glow-effect);
   animation: pulseGlow 1.5s ease-in-out infinite;
 }
@@ -128,7 +127,7 @@ nav a::after, .dropdown-toggle::after {
   left: 50%;
   width: 4px;
   height: 4px;
-  background: var(--primary-neon-blue);
+  background: var(--primary-gold);
   border-radius: 50%;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
@@ -171,8 +170,10 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   box-shadow: var(--shadow);
   min-width: 140px;
   max-width: 100%;
+  max-height: 50vh; /* Limit height to avoid overflow */
+  overflow-y: auto; /* Scroll if too long */
   padding: 0.5rem;
-  z-index: 2000; /* Increased z-index */
+  z-index: 5000; /* High z-index to appear above all */
   opacity: 0;
   transform: translateY(8px);
   transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
@@ -187,7 +188,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 .dropdown-menu a {
   display: block;
   padding: 0.5rem 1rem;
-  color: var(--primary-grey);
+  color: var(--text-dark);
   text-decoration: none;
   font-size: clamp(0.75rem, 2.3vw, 0.85rem);
   transition: background var(--transition-speed) ease, color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
@@ -197,8 +198,8 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 }
 
 .dropdown-menu a:hover, .dropdown-menu a:active, .dropdown-menu a:focus {
-  background: rgba(0, 212, 255, 0.1);
-  color: var(--primary-neon-blue);
+  background: rgba(212, 160, 23, 0.1);
+  color: var(--primary-gold);
   box-shadow: var(--glow-effect);
   animation: pulseGlow 1.5s ease-in-out infinite;
 }
@@ -226,7 +227,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 
 .product:hover, .product:active, .product:focus-within {
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(212, 160, 23, 0.4);
   animation: pulseGlow 1.5s ease-in-out infinite;
 }
 
@@ -250,7 +251,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 .product h3 {
   font-family: 'Orbitron', sans-serif;
   font-size: clamp(1rem, 3vw, 1.2rem);
-  color: var(--primary-neon-blue);
+  color: var(--primary-maroon);
   margin: 0.8rem 0 0.4rem;
   text-shadow: var(--glow-effect);
   text-transform: uppercase;
@@ -259,28 +260,28 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 
 .product .price {
   font-weight: 600;
-  color: var(--accent-purple);
+  color: var(--primary-green);
   font-size: clamp(0.9rem, 2.5vw, 1rem);
   margin-bottom: 0.8rem;
-  text-shadow: 0 0 5px rgba(123, 0, 255, 0.3);
+  text-shadow: 0 0 5px rgba(46, 139, 87, 0.3);
 }
 
 .product .view-details {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background: var(--primary-neon-blue);
+  padding: 0.6rem 1rem;
+  background: var(--accent-blue);
   color: var(--text-light);
   text-decoration: none;
   border-radius: 8px;
   font-size: clamp(0.8rem, 2.3vw, 0.9rem);
   transition: background var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
   margin-top: 0.5rem;
-  box-shadow: var(--glow-effect);
+  box-shadow: var(--glow-blue);
 }
 
 .product .view-details:hover, .product .view-details:active, .product .view-details:focus {
-  background: var(--accent-purple);
-  box-shadow: var(--glow-purple);
+  background: var(--primary-maroon);
+  box-shadow: var(--glow-effect);
   animation: pulseGlow 1.5s ease-in-out infinite;
 }
 
@@ -289,7 +290,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(10, 15, 43, 0.95);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 1000;
   justify-content: center;
   align-items: center;
@@ -309,7 +310,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   height: auto;
   object-fit: contain;
   border-radius: 8px;
-  border: 2px solid var(--primary-neon-blue);
+  border: 2px solid var(--primary-gold);
   box-shadow: var(--glow-effect);
   animation: pulseGlow 2s ease-in-out infinite;
 }
@@ -325,7 +326,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 }
 
 .modal-close:hover, .modal-close:active, .modal-close:focus {
-  color: var(--primary-neon-blue);
+  color: var(--primary-gold);
   text-shadow: var(--glow-effect);
 }
 
@@ -337,7 +338,7 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   gap: 0.5rem;
   margin: calc(var(--container-padding) * 1.5) auto;
   padding: clamp(0.7rem, 2.5vw, 0.9rem) clamp(1.2rem, 4vw, 1.8rem);
-  background: var(--primary-neon-blue);
+  background: var(--primary-green);
   color: var(--text-light);
   font-family: 'Orbitron', sans-serif;
   font-weight: 600;
@@ -345,15 +346,15 @@ nav a:hover::after, .dropdown-toggle:hover::after {
   border-radius: 40px;
   box-shadow: var(--glow-effect);
   transition: background var(--transition-speed) ease, transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-  min-height: var(--touch-target-size);
+  min-height: touch-target-size);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .whatsapp-button:hover, .whatsapp-button:active, .whatsapp-button:focus {
-  background: var(--accent-purple);
+  background: var(--primary-maroon);
   transform: translateY(-2px);
-  box-shadow: var(--glow-purple);
+  box-shadow: var(--glow-effect);
   animation: pulseGlow 1.5s ease-in-out infinite;
 }
 
@@ -367,13 +368,11 @@ footer {
   margin-top: calc(var(--container-padding) * 1.5);
   text-align: center;
   padding: var(--container-padding);
-  background: var(--bg-gradient);
-  background-size: 200% 200%;
-  animation: gradientFlow 10s ease infinite;
+  background: var(--primary-maroon);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   font-size: clamp(0.75rem, 2.2vw, 0.85rem);
-  color: var(--primary-grey);
+  color: var(--text-light);
 }
 
 footer .social-icons {
@@ -386,7 +385,7 @@ footer .social-icons a {
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: var(--primary-neon-blue);
+  background: var(--primary-gold);
   color: var(--text-light);
   text-decoration: none;
   border-radius: 50%;
@@ -395,8 +394,8 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover, footer .social-icons a:active, footer .social-icons a:focus {
-  background: var(--accent-purple);
-  box-shadow: var(--glow-purple);
+  background: var(--primary-green);
+  box-shadow: var(--glow-effect);
   animation: pulseGlow 1.5s ease-in-out infinite;
 }
 
@@ -420,19 +419,22 @@ footer .social-icons a:hover, footer .social-icons a:active, footer .social-icon
     padding: 0.4rem 0.6rem;
   }
   .dropdown-menu {
-    position: fixed;
-    top: calc(var(--touch-target-size) + 2 * var(--container-padding)); /* Position below nav */
-    left: var(--container-padding);
-    right: var(--container-padding);
+    position: absolute; /* Use absolute to anchor to dropdown */
+    top: calc(100% + 0.5rem); /* Position below toggle */
+    left: 0;
+    right: 0;
     width: auto;
     min-width: 160px;
     max-width: calc(100vw - 2 * var(--container-padding));
-    z-index: 3000; /* Higher z-index for mobile */
-    transition: opacity var(--transition-speed) ease;
+    max-height: 50vh; /* Limit height */
+    overflow-y: auto; /* Scroll if needed */
+    z-index: 5000; /* High z-index */
+    transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
   }
   .dropdown-menu.show {
     display: block;
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
