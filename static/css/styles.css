@@ -170,8 +170,8 @@ nav a:hover::after, .dropdown-toggle:hover::after {
 
 .dropdown-toggle::before {
   content: '▼';
-  font-size: 0.7rem;
-  margin-left: 0.4rem;
+  font-size: 0.6rem;
+  margin-left: 0.3rem;
   transition: transform var(--transition-speed) ease;
 }
 
