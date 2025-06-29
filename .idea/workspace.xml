@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4c3d6d-6d23-44be-9410-c9358bad3a28" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cotton_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cotton_saree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/design_blouse_36.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/design_blouse_36.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/design_blouse_44.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/design_blouse_44.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fancy_pattu_saree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/plain_saree.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plain_saree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/l_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/l_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xl_nighties.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_nighties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xl_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xxl_nighties.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxl_nighties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xxl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxl_size_chudi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xxxl_nighties.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxxl_nighties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/xxxl_size_chudi.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xxxl_size_chudi.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
